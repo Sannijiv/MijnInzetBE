@@ -11,7 +11,7 @@ public class UserController {
 
     private UserRepository repository;
 
-    @CrossOrigin(origins = "https://oege.ie.hva.nl/~zhengk001")
+    @CrossOrigin(origins = "https://oege.ie.hva.nl")
     @RequestMapping(path = "/api/login", method = RequestMethod.POST)
     public @ResponseBody User login(@RequestParam String username, @RequestParam String password) {
         return new User(username, password);
